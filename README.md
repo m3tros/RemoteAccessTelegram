@@ -53,7 +53,7 @@ This script must be run on the victim's machine, your telegram user id must be s
 ```
 Script <-- Telegram bot
 
-  Executing a terminal command...
+  Script executing a terminal command...
 
 Script --> Telegram bot
 ```
