@@ -1,5 +1,3 @@
- 
-
 <p align="center"> 
   <img src="https://user-images.githubusercontent.com/107058068/173295144-26031d02-65c3-4972-ac73-909a656a2c76.png" alt="RemoteAccessTelegram" width="80px" height="80px">
 </p>
@@ -27,4 +25,28 @@ You need to insert a token here. You can get it by creating a bot in <a href="ht
 users = [] # Insert your telegram user id here.
 ```
 In these square brackets you need to enter your telegram user id. You can get it from the <a href="https://t.me/getmyid_bot">Get My ID bot</a>.<br>
-This is necessary so that only a limited number of users can use the bot. Since with the help of a bot you will control the machine.
+This is necessary so that only a limited number of users can use the bot. Since with the help of a bot you will control the machine.<br><br>
+Now save the file and run using the command below.
+```bash
+python3 RemoteAccessTelegram.py
+```
+Well, the script is running and now you need to run the bot with the command below.
+```
+/start
+```
+Commands that the bot processes:
+```
+exit or quit - Shutdown of the bot on the machine.
+```
+After executing the 'exit' or 'quit' command, the script on the machine will be terminated.
+
+### Compilation
+After all the actions with the file, it must be compiled into an executable file. I will use <a href="https://pypi.org/project/pyinstaller/">Pyinstaller</a>.
+```
+pyinstaller -F RemoteAccessTelegram.py
+```
+You can rename the file and change the extension from `.py` on `.pyw` to make the file run in the background process.
+ 
+## Developer 
+Email    : wwwkali00312@gmail.com<br>
+Telegram : https://t.me/metrossoftware
