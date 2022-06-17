@@ -60,5 +60,4 @@ Script --> Telegram bot
 Even if some error occurs, it will be returned to the bot by the script.
 
 ## Developer 
-Email    : wwwkali00312@gmail.com<br>
 Telegram : https://t.me/metrossoftware
