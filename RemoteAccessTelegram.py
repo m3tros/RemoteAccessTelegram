@@ -25,14 +25,14 @@ Available bot commands:
     try:
         with Popen(message.text, stdout=PIPE, stderr=None, shell=True) as process:
             return_result_command = process.communicate()[0].decode('utf-8')
-            command_split = shlex.split(message.text)
-            if str(command_split[0]).lower() == 'exit' or str(command_split[0]).lower() == 'quit':
-                bot.send_message(message.chat.id, 'Completion of the work...')
-                os.kill(os.getpid(), signal.SIGINT)
-            elif str(command_split[0]).lower() == 'cd':
-                os.chdir(str(command_split[-1]))
-            else:
-                bot.send_message(message.chat.id, return_result_command)
+        command_split = shlex.split(message.text)
+        if str(command_split[0]).lower() == 'exit' or str(command_split[0]).lower() == 'quit':
+            bot.send_message(message.chat.id, 'Completion of the work...')
+            os.kill(os.getpid(), signal.SIGINT)
+        elif str(command_split[0]).lower() == 'cd':
+            os.chdir(str(command_split[-1]))
+        else:
+            bot.send_message(message.chat.id, return_result_command)
     except Exception as error:
         bot.send_message(message.chat.id, error)
 
