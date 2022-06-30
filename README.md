@@ -59,5 +59,3 @@ Script --> Telegram bot
 ```
 Even if some error occurs, it will be returned to the bot by the script.
 
-## Developer 
-Telegram : https://t.me/metrossoftware
