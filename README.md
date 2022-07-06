@@ -38,7 +38,7 @@ Commands that the bot processes:
 ```
 exit or quit - Shutdown of the bot on the machine.
 ```
-After executing the 'exit' or 'quit' command, the script on the machine will be terminated.
+After executing the `exit` or `quit` command, the script on the machine will be terminated.
 
 ### Compilation
 After all the actions with the file, it must be compiled into an executable file. I will use <a href="https://pypi.org/project/pyinstaller/">Pyinstaller</a>.
